@@ -1,21 +1,18 @@
 
-  
+      
+        
+        
+        delete from "propharma"."public"."stg_inventory" as DBT_INTERNAL_DEST
+        where (medicine_id) in (
+            select distinct medicine_id
+            from "stg_inventory__dbt_tmp174003280154" as DBT_INTERNAL_SOURCE
+        );
+
     
 
-  create  table "propharma"."public"."stg_inventory__dbt_tmp"
-  
-  
-    as
-  
-  (
-    with raw_inventory as (
-    select * from public.inventory
-)
-
-select
-    medicine_id,
-    stock_qty::int as stock_qty,
-    last_updated::date as last_updated
-from raw_inventory
-  );
+    insert into "propharma"."public"."stg_inventory" ("medicine_id", "stock_qty", "last_updated")
+    (
+        select "medicine_id", "stock_qty", "last_updated"
+        from "stg_inventory__dbt_tmp174003280154"
+    )
   

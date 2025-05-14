@@ -1,3 +1,8 @@
+{{ config(
+    materialized='incremental',
+    unique_key='patient_id'
+) }}
+
 with raw_patients as (
     select * from public.patients
 )

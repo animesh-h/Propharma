@@ -1,3 +1,9 @@
+{{ config(
+    materialized='incremental',
+    unique_key='supplier_id'
+) }}
+
+
 with raw_suppliers as (
     select * from public.suppliers
 )

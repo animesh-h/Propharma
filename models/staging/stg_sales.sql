@@ -1,3 +1,9 @@
+{{ config(
+    materialized='incremental',
+    unique_key='sale_id'
+) }}
+
+
 with raw_sales as (
     select * from sales
 )

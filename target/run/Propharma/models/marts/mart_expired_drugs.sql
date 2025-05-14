@@ -1,16 +1,9 @@
 
-  
+  create view "propharma"."public"."mart_expired_drugs__dbt_tmp"
     
-
-  create  table "propharma"."public"."mart_expired_drugs__dbt_tmp"
-  
-  
-    as
-  
-  (
     
-
-select
+  as (
+    select
     m.medicine_id,
     m.name,
     m.category,
@@ -28,4 +21,3 @@ select
 from "propharma"."public"."stg_inventory" i
 join "propharma"."public"."stg_medicines" m on i.medicine_id = m.medicine_id
   );
-  

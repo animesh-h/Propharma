@@ -1,23 +1,18 @@
 
-  
+      
+        
+        
+        delete from "propharma"."public"."stg_prescriptions" as DBT_INTERNAL_DEST
+        where (prescription_id) in (
+            select distinct prescription_id
+            from "stg_prescriptions__dbt_tmp174004521654" as DBT_INTERNAL_SOURCE
+        );
+
     
 
-  create  table "propharma"."public"."stg_prescriptions__dbt_tmp"
-  
-  
-    as
-  
-  (
-    with raw_prescriptions as (
-    select * from public.prescriptions
-)
-
-select
-    prescription_id,
-    patient_id,
-    medicine_id,
-    prescribed_date::date as prescribed_date,
-    quantity::int as quantity
-from raw_prescriptions
-  );
+    insert into "propharma"."public"."stg_prescriptions" ("prescription_id", "patient_id", "medicine_id", "prescribed_date", "quantity")
+    (
+        select "prescription_id", "patient_id", "medicine_id", "prescribed_date", "quantity"
+        from "stg_prescriptions__dbt_tmp174004521654"
+    )
   

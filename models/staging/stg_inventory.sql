@@ -1,3 +1,8 @@
+{{ config(
+    materialized='incremental',
+    unique_key='medicine_id'
+) }}
+
 with raw_inventory as (
     select * from public.inventory
 )

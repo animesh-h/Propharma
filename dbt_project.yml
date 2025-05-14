@@ -4,6 +4,6 @@ profile: Propharma
 models:
   Propharma:
     staging:
-      materialized: table
+      materialized: incremental
     marts:
       materialized: view

@@ -1,3 +1,8 @@
+{{ config(
+    materialized='incremental',
+    unique_key='prescription_id'
+) }}
+
 with raw_prescriptions as (
     select * from public.prescriptions
 )

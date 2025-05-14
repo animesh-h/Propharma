@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 select
     m.medicine_id,
     m.name,
