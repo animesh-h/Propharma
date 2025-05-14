@@ -1,11 +1,12 @@
-pharmacy_mgmt:
+Propharma:
   target: dev
   outputs:
     dev:
       type: postgres
-      host: 0.tcp.in.ngrok.io
+      host: localhost
       user: postgres
+      port: 5432
       password: postgres
-      dbname: dbt_tutorial
+      dbname: propharma
       schema: public
       threads: 1

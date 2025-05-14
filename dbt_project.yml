@@ -1,3 +1,9 @@
-name: pharmacy_mgmt
+name: Propharma
 version: '1.0'
-profile: pharmacy_mgmt
+profile: Propharma
+models:
+  Propharma:
+    staging:
+      materialized: table
+    marts:
+      materialized: view

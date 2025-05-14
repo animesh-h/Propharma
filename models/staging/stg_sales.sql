@@ -1,5 +1,5 @@
 with raw_sales as (
-    select * from {{ source('public', 'sales') }}
+    select * from sales
 )
 select
     sale_id,

@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+
 
 select
     m.medicine_id,
@@ -12,10 +12,8 @@ select
         when i.stock_qty < 20 then true
         else false
     end as low_stock_flag,
-    {% if is_expired('m.expiry_date') %}
+    
         true as expired
-    {% else %}
-        false as expired
-    {% endif %}
-from {{ ref('stg_inventory') }} i
-join {{ ref('stg_medicines') }} m on i.medicine_id = m.medicine_id
+    
+from "propharma"."public"."stg_inventory" i
+join "propharma"."public"."stg_medicines" m on i.medicine_id = m.medicine_id
