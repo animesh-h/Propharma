@@ -3,9 +3,9 @@ pharmacy_mgmt:
   outputs:
     dev:
       type: postgres
-      host: localhost
-      user: your_user
-      password: your_password
-      dbname: your_db
-      schema: pharmacy
+      host: 0.tcp.in.ngrok.io
+      user: postgres
+      password: postgres
+      dbname: dbt_tutorial
+      schema: public
       threads: 1
