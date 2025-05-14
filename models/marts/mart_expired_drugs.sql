@@ -1,0 +1,1 @@
+-- filter medicines with expiry_date < current_date

@@ -1,0 +1,11 @@
+pharmacy_mgmt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: your_user
+      password: your_password
+      dbname: your_db
+      schema: pharmacy
+      threads: 1

@@ -1,0 +1,1 @@
+-- join inventory with medicines and flag low stock
