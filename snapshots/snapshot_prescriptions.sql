@@ -3,7 +3,8 @@
     config(
       target_schema='snapshots',
       unique_key='prescription_id',
-      strategy='timestamp',
+      strategy='check',
+      check_cols=['prescribed_date']
       updated_at='prescribed_date'
     )
 }}
