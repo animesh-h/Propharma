@@ -1,3 +1,5 @@
+
+
 select pat.patient_id,
 	pat.name AS "Patients Name",
 	EXTRACT(YEAR FROM AGE(CURRENT_DATE, pat.dob)) AS "Patients Age",

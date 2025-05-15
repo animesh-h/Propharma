@@ -1,0 +1,51 @@
+sources:
+  - name: raw_tables
+    database: propharma
+    schema: public
+    tables:
+      - name: inv
+        identifier: inventory
+        columns:
+          - name: inventory_id
+            tests:
+              - not_null
+
+      - name: med
+        identifier: medicines
+        columns:
+          - name: medicine_id
+            tests:
+              - not_null
+
+          - name: name
+            tests:
+              - not_null              
+              - empty_string
+
+      - name: pre
+        identifier: prescriptions
+        columns:
+          - name: prescription_id
+            tests:
+              - not_null
+
+      - name: pat
+        identifier: patients
+        columns:
+          - name: patient_id
+            tests:
+              - not_null
+
+      - name: sal
+        identifier: sales
+        columns:
+          - name: sale_id
+            tests:
+              - not_null
+
+      - name: sup
+        identifier: suppliers
+        columns:
+          - name: supplier_id
+            tests:
+              - not_null

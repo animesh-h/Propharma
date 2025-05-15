@@ -1,18 +1,19 @@
 
-      
-        
-        
-        delete from "propharma"."public"."stg_suppliers" as DBT_INTERNAL_DEST
-        where (supplier_id) in (
-            select distinct supplier_id
-            from "stg_suppliers__dbt_tmp182314819490" as DBT_INTERNAL_SOURCE
-        );
-
+  create view "propharma"."public"."stg_suppliers__dbt_tmp"
+    
+    
+  as (
     
 
-    insert into "propharma"."public"."stg_suppliers" ("supplier_id", "supplier_name", "medicine_id", "last_supplied_date")
-    (
-        select "supplier_id", "supplier_name", "medicine_id", "last_supplied_date"
-        from "stg_suppliers__dbt_tmp182314819490"
-    )
-  
+
+with raw_suppliers as (
+    select * from "propharma"."public"."suppliers"
+)
+
+select
+    supplier_id,
+    supplier_name,
+    medicine_id,
+    last_supplied_date::date as last_supplied_date
+from raw_suppliers
+  );

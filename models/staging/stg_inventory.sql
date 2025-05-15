@@ -1,10 +1,9 @@
 {{ config(
-    materialized='incremental',
-    unique_key='medicine_id'
+    materialized='view'
 ) }}
 
 with raw_inventory as (
-    select * from public.inventory
+    select * from {{ source('raw_tables','inv')}}
 )
 
 select

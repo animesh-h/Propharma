@@ -1,18 +1,18 @@
 
-      
-        
-        
-        delete from "propharma"."public"."stg_patients" as DBT_INTERNAL_DEST
-        where (patient_id) in (
-            select distinct patient_id
-            from "stg_patients__dbt_tmp182313538450" as DBT_INTERNAL_SOURCE
-        );
-
+  create view "propharma"."public"."stg_patients__dbt_tmp"
+    
+    
+  as (
     
 
-    insert into "propharma"."public"."stg_patients" ("patient_id", "name", "dob", "gender")
-    (
-        select "patient_id", "name", "dob", "gender"
-        from "stg_patients__dbt_tmp182313538450"
-    )
-  
+with raw_patients as (
+    select * from "propharma"."public"."patients"
+)
+
+select
+    patient_id,
+    name,
+    dob::date as dob,
+    gender
+from raw_patients
+  );

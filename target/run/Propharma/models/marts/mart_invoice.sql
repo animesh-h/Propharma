@@ -1,9 +1,17 @@
 
-  create view "propharma"."public"."mart_invoice__dbt_tmp"
+      
+  
     
+
+  create  table "propharma"."public"."mart_invoice"
+  
+  
+    as
+  
+  (
     
-  as (
-    select pat.patient_id,
+
+select pat.patient_id,
 	pat.name AS "Patients Name",
 	EXTRACT(YEAR FROM AGE(CURRENT_DATE, pat.dob)) AS "Patients Age",
 	pre.prescribed_date as "Prescribed Date",
@@ -15,3 +23,5 @@
 	join "propharma"."public"."stg_prescriptions" pre on pat.patient_id = pre.patient_id
 	join "propharma"."public"."stg_medicines" med on pre.medicine_id = med.medicine_id
   );
+  
+  

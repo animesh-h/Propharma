@@ -1,9 +1,17 @@
 
-  create view "propharma"."public"."mart_sales_summary__dbt_tmp"
+      
+  
     
+
+  create  table "propharma"."public"."mart_sales_summary"
+  
+  
+    as
+  
+  (
     
-  as (
-    select
+
+select
     date_trunc('day', sale_date) as sales_day,
     date_trunc('month', sale_date) as sales_month,
     count(*) as total_sales_count,
@@ -13,3 +21,5 @@ from "propharma"."public"."stg_sales"
 group by sales_day, sales_month
 order by sales_day
   );
+  
+  

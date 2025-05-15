@@ -2,7 +2,7 @@
 
 
 with raw_sales as (
-    select * from sales
+    select * from "propharma"."public"."sales"
 )
 select
     sale_id,

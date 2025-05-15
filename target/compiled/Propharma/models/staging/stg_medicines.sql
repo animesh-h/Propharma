@@ -1,7 +1,7 @@
 
 
 with raw_medicines as (
-    select * from public.medicines
+    select * from "propharma"."public"."medicines"
 )
 
 select

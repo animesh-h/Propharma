@@ -1,3 +1,5 @@
+
+
 select
     date_trunc('day', sale_date) as sales_day,
     date_trunc('month', sale_date) as sales_month,

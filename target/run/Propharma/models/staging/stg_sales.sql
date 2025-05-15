@@ -1,18 +1,20 @@
 
-      
-        
-        
-        delete from "propharma"."public"."stg_sales" as DBT_INTERNAL_DEST
-        where (sale_id) in (
-            select distinct sale_id
-            from "stg_sales__dbt_tmp182314332508" as DBT_INTERNAL_SOURCE
-        );
-
+  create view "propharma"."public"."stg_sales__dbt_tmp"
+    
+    
+  as (
     
 
-    insert into "propharma"."public"."stg_sales" ("sale_id", "prescription_id", "medicine_id", "sale_date", "quantity_sold", "amount")
-    (
-        select "sale_id", "prescription_id", "medicine_id", "sale_date", "quantity_sold", "amount"
-        from "stg_sales__dbt_tmp182314332508"
-    )
-  
+
+with raw_sales as (
+    select * from "propharma"."public"."sales"
+)
+select
+    sale_id,
+    prescription_id,
+    medicine_id,
+    sale_date::date as sale_date,
+    quantity_sold::int,
+    amount::numeric(10,2)
+from raw_sales
+  );

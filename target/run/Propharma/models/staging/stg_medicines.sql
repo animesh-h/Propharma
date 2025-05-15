@@ -1,18 +1,19 @@
 
-      
-        
-        
-        delete from "propharma"."public"."stg_medicines" as DBT_INTERNAL_DEST
-        where (medicine_id) in (
-            select distinct medicine_id
-            from "stg_medicines__dbt_tmp182313181024" as DBT_INTERNAL_SOURCE
-        );
-
+  create view "propharma"."public"."stg_medicines__dbt_tmp"
+    
+    
+  as (
     
 
-    insert into "propharma"."public"."stg_medicines" ("medicine_id", "name", "category", "price", "expiry_date")
-    (
-        select "medicine_id", "name", "category", "price", "expiry_date"
-        from "stg_medicines__dbt_tmp182313181024"
-    )
-  
+with raw_medicines as (
+    select * from "propharma"."public"."medicines"
+)
+
+select
+    medicine_id,
+    name,
+    category,
+    price::numeric(10,2) as price,
+    expiry_date::date as expiry_date
+from raw_medicines
+  );

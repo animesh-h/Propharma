@@ -5,7 +5,6 @@
       unique_key='prescription_id',
       strategy='check',
       check_cols=['prescribed_date']
-      updated_at='prescribed_date'
     )
 }}
 select * from {{ ref('stg_prescriptions') }}

@@ -1,7 +1,7 @@
 
 
 with raw_inventory as (
-    select * from public.inventory
+    select * from "propharma"."public"."inventory"
 )
 
 select

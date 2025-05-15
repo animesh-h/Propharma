@@ -2,7 +2,7 @@
 
 
 with raw_suppliers as (
-    select * from public.suppliers
+    select * from "propharma"."public"."suppliers"
 )
 
 select

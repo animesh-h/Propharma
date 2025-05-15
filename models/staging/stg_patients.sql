@@ -1,10 +1,9 @@
 {{ config(
-    materialized='incremental',
-    unique_key='patient_id'
+    materialized='view'
 ) }}
 
 with raw_patients as (
-    select * from public.patients
+    select * from {{ source('raw_tables','pat')}}
 )
 
 select

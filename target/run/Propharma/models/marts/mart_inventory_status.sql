@@ -1,9 +1,17 @@
 
-  create view "propharma"."public"."mart_inventory_status__dbt_tmp"
+      
+  
     
+
+  create  table "propharma"."public"."mart_inventory_status"
+  
+  
+    as
+  
+  (
     
-  as (
-    select
+
+select
     m.medicine_id,
     m.name,
     m.category,
@@ -18,3 +26,5 @@
 from "propharma"."public"."stg_inventory" i
 join "propharma"."public"."stg_medicines" m on i.medicine_id = m.medicine_id
   );
+  
+  

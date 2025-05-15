@@ -1,11 +1,10 @@
 {{ config(
-    materialized='incremental',
-    unique_key='sale_id'
+    materialized='view'
 ) }}
 
 
 with raw_sales as (
-    select * from sales
+    select * from {{ source('raw_tables','sal')}}
 )
 select
     sale_id,

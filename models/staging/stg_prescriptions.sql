@@ -1,10 +1,9 @@
 {{ config(
-    materialized='incremental',
-    unique_key='prescription_id'
+    materialized='view'
 ) }}
 
 with raw_prescriptions as (
-    select * from public.prescriptions
+    select * from {{ source('raw_tables','pre')}}
 )
 
 select

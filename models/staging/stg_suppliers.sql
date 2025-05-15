@@ -1,11 +1,10 @@
 {{ config(
-    materialized='incremental',
-    unique_key='supplier_id'
+    materialized='view'
 ) }}
 
 
 with raw_suppliers as (
-    select * from public.suppliers
+    select * from {{ source('raw_tables','sup')}}
 )
 
 select

@@ -1,3 +1,8 @@
+{{ config(
+    materialized='incremental',
+    unique_key='patient_id'
+) }}
+
 select
     p.patient_id,
     p.name,
