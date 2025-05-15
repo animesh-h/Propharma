@@ -1,30 +1,18 @@
 
       
-  
+        
+        
+        delete from "propharma"."public"."mart_inventory_status" as DBT_INTERNAL_DEST
+        where (medicine_id) in (
+            select distinct medicine_id
+            from "mart_inventory_status__dbt_tmp172730419283" as DBT_INTERNAL_SOURCE
+        );
+
     
 
-  create  table "propharma"."public"."mart_inventory_status"
-  
-  
-    as
-  
-  (
-    
-
-select
-    m.medicine_id,
-    m.name,
-    m.category,
-    m.price,
-    m.expiry_date,
-    i.stock_qty,
-    i.last_updated,
-    case 
-        when i.stock_qty < 20 then true
-        else false
-    end as low_stock_flag
-from "propharma"."public"."stg_inventory" i
-join "propharma"."public"."stg_medicines" m on i.medicine_id = m.medicine_id
-  );
-  
+    insert into "propharma"."public"."mart_inventory_status" ("medicine_id", "name", "category", "price", "expiry_date", "stock_qty", "last_updated", "low_stock_flag")
+    (
+        select "medicine_id", "name", "category", "price", "expiry_date", "stock_qty", "last_updated", "low_stock_flag"
+        from "mart_inventory_status__dbt_tmp172730419283"
+    )
   

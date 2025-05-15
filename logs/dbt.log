@@ -23321,3 +23321,1613 @@ OSError: [WinError 10048] Only one usage of each socket address (protocol/networ
 [0m17:04:24.263913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C78942310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C78921490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019C78A36C50>]}
 [0m17:04:24.265909 [debug] [MainThread]: Flushing usage events
 [0m17:04:25.514362 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:44.022248 [error] [MainThread]: Encountered an error:
+
+[0m17:06:44.069455 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 301, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:06:44.085440 [debug] [MainThread]: Command `dbt docs serve` failed at 17:06:44.084442 after 19699.60 seconds
+[0m17:06:44.092428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC61E3FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC6180ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025DC6182B10>]}
+[0m17:06:44.097144 [debug] [MainThread]: Flushing usage events
+[0m17:06:45.321974 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:54.271275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBAD4ADC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBA96B5610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBAD503010>]}
+
+
+============================== 17:06:54.283353 | 176cf469-707d-4292-9f16-ff9c31d318e0 ==============================
+[0m17:06:54.283353 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:06:54.286404 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\anisin06\\Downloads\\Propharma', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\anisin06\\Downloads\\Propharma\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs serve', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:06:54.932950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '176cf469-707d-4292-9f16-ff9c31d318e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBAD6ACC90>]}
+[0m17:06:55.049024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '176cf469-707d-4292-9f16-ff9c31d318e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBAA107450>]}
+[0m17:27:09.795792 [error] [MainThread]: Encountered an error:
+
+[0m17:27:09.809117 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 301, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anisin06\AppData\Local\Programs\Python\Python311\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:27:09.822995 [debug] [MainThread]: Command `dbt docs serve` failed at 17:27:09.821990 after 1216.05 seconds
+[0m17:27:09.824988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBAD503010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBAC80F8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CBAD4A10D0>]}
+[0m17:27:09.827503 [debug] [MainThread]: Flushing usage events
+[0m17:27:11.022502 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:27:21.116872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026368B74E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026368B74E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026368B744D0>]}
+
+
+============================== 17:27:21.125298 | fed78384-ceb4-4e58-aaf0-9066410be775 ==============================
+[0m17:27:21.125298 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:27:21.127294 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\anisin06\\Downloads\\Propharma\\logs', 'profiles_dir': 'C:\\Users\\anisin06\\Downloads\\Propharma', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:27:21.635037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026368B32010>]}
+[0m17:27:21.755002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026365797B90>]}
+[0m17:27:21.757993 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:27:22.614373 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m17:27:23.329741 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:27:23.336712 [debug] [MainThread]: Partial parsing: updated file: Propharma://models\marts\mart_invoice.sql
+[0m17:27:24.468934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026369F05690>]}
+[0m17:27:24.721431 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anisin06\Downloads\Propharma\target\manifest.json
+[0m17:27:24.732922 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anisin06\Downloads\Propharma\target\semantic_manifest.json
+[0m17:27:24.813774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A36FE10>]}
+[0m17:27:24.814801 [info ] [MainThread]: Found 1 seed, 1 snapshot, 8 data tests, 11 models, 6 sources, 435 macros
+[0m17:27:24.817692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026369F444D0>]}
+[0m17:27:24.822192 [info ] [MainThread]: 
+[0m17:27:24.824593 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:27:24.826930 [info ] [MainThread]: 
+[0m17:27:24.829294 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:27:24.841721 [debug] [ThreadPool]: Acquiring new postgres connection 'list_propharma'
+[0m17:27:25.338550 [debug] [ThreadPool]: Using postgres connection "list_propharma"
+[0m17:27:25.339565 [debug] [ThreadPool]: On list_propharma: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "connection_name": "list_propharma"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:27:25.340574 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:27:25.726670 [debug] [ThreadPool]: SQL status: SELECT 11 in 0.385 seconds
+[0m17:27:25.729666 [debug] [ThreadPool]: On list_propharma: Close
+[0m17:27:25.734882 [debug] [ThreadPool]: Acquiring new postgres connection 'list_propharma_snapshots'
+[0m17:27:25.746657 [debug] [ThreadPool]: Using postgres connection "list_propharma_snapshots"
+[0m17:27:25.748733 [debug] [ThreadPool]: On list_propharma_snapshots: BEGIN
+[0m17:27:25.749760 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:27:26.106342 [debug] [ThreadPool]: SQL status: BEGIN in 0.356 seconds
+[0m17:27:26.107345 [debug] [ThreadPool]: Using postgres connection "list_propharma_snapshots"
+[0m17:27:26.109339 [debug] [ThreadPool]: On list_propharma_snapshots: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "connection_name": "list_propharma_snapshots"} */
+select
+      'propharma' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'snapshots'
+    union all
+    select
+      'propharma' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'snapshots'
+    union all
+    select
+      'propharma' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'snapshots'
+  
+[0m17:27:26.127556 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.016 seconds
+[0m17:27:26.132550 [debug] [ThreadPool]: On list_propharma_snapshots: ROLLBACK
+[0m17:27:26.134543 [debug] [ThreadPool]: On list_propharma_snapshots: Close
+[0m17:27:26.137536 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_propharma_snapshots, now list_propharma_public)
+[0m17:27:26.146031 [debug] [ThreadPool]: Using postgres connection "list_propharma_public"
+[0m17:27:26.148030 [debug] [ThreadPool]: On list_propharma_public: BEGIN
+[0m17:27:26.149531 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:27:26.495199 [debug] [ThreadPool]: SQL status: BEGIN in 0.346 seconds
+[0m17:27:26.497193 [debug] [ThreadPool]: Using postgres connection "list_propharma_public"
+[0m17:27:26.499188 [debug] [ThreadPool]: On list_propharma_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "connection_name": "list_propharma_public"} */
+select
+      'propharma' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'propharma' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'propharma' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m17:27:26.516263 [debug] [ThreadPool]: SQL status: SELECT 17 in 0.015 seconds
+[0m17:27:26.522060 [debug] [ThreadPool]: On list_propharma_public: ROLLBACK
+[0m17:27:26.524459 [debug] [ThreadPool]: On list_propharma_public: Close
+[0m17:27:26.549174 [debug] [MainThread]: Using postgres connection "master"
+[0m17:27:26.550550 [debug] [MainThread]: On master: BEGIN
+[0m17:27:26.553610 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:27:26.872545 [debug] [MainThread]: SQL status: BEGIN in 0.320 seconds
+[0m17:27:26.874931 [debug] [MainThread]: Using postgres connection "master"
+[0m17:27:26.876271 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m17:27:26.930186 [debug] [MainThread]: SQL status: SELECT 6 in 0.052 seconds
+[0m17:27:26.936621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A172F90>]}
+[0m17:27:26.938936 [debug] [MainThread]: On master: ROLLBACK
+[0m17:27:26.941443 [debug] [MainThread]: Using postgres connection "master"
+[0m17:27:26.942446 [debug] [MainThread]: On master: BEGIN
+[0m17:27:26.944441 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m17:27:26.945439 [debug] [MainThread]: On master: COMMIT
+[0m17:27:26.946436 [debug] [MainThread]: Using postgres connection "master"
+[0m17:27:26.948431 [debug] [MainThread]: On master: COMMIT
+[0m17:27:26.949935 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:27:26.951444 [debug] [MainThread]: On master: Close
+[0m17:27:26.964674 [debug] [Thread-1 (]: Began running node model.Propharma.stg_inventory
+[0m17:27:26.967008 [info ] [Thread-1 (]: 1 of 11 START sql view model public.stg_inventory .............................. [RUN]
+[0m17:27:26.970928 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.Propharma.stg_inventory'
+[0m17:27:26.973064 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_inventory
+[0m17:27:27.001288 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_inventory"
+[0m17:27:27.005870 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_inventory
+[0m17:27:27.182517 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.stg_inventory"
+[0m17:27:27.186506 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_inventory"
+[0m17:27:27.187505 [debug] [Thread-1 (]: On model.Propharma.stg_inventory: BEGIN
+[0m17:27:27.189498 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:27:27.539259 [debug] [Thread-1 (]: SQL status: BEGIN in 0.349 seconds
+[0m17:27:27.540788 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_inventory"
+[0m17:27:27.541791 [debug] [Thread-1 (]: On model.Propharma.stg_inventory: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_inventory"} */
+
+  create view "propharma"."public"."stg_inventory__dbt_tmp"
+    
+    
+  as (
+    
+
+with raw_inventory as (
+    select * from "propharma"."public"."inventory"
+)
+
+select
+    medicine_id,
+    stock_qty::int as stock_qty,
+    last_updated::date as last_updated
+from raw_inventory
+  );
+[0m17:27:27.551783 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.009 seconds
+[0m17:27:27.566361 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_inventory"
+[0m17:27:27.568606 [debug] [Thread-1 (]: On model.Propharma.stg_inventory: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_inventory"} */
+alter table "propharma"."public"."stg_inventory" rename to "stg_inventory__dbt_backup"
+[0m17:27:27.570647 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:27.577058 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_inventory"
+[0m17:27:27.579109 [debug] [Thread-1 (]: On model.Propharma.stg_inventory: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_inventory"} */
+alter table "propharma"."public"."stg_inventory__dbt_tmp" rename to "stg_inventory"
+[0m17:27:27.580107 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:27.614593 [debug] [Thread-1 (]: On model.Propharma.stg_inventory: COMMIT
+[0m17:27:27.616592 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_inventory"
+[0m17:27:27.618063 [debug] [Thread-1 (]: On model.Propharma.stg_inventory: COMMIT
+[0m17:27:27.621567 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:27:27.634417 [debug] [Thread-1 (]: Applying DROP to: "propharma"."public"."stg_inventory__dbt_backup"
+[0m17:27:27.645257 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_inventory"
+[0m17:27:27.646267 [debug] [Thread-1 (]: On model.Propharma.stg_inventory: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_inventory"} */
+drop view if exists "propharma"."public"."stg_inventory__dbt_backup" cascade
+[0m17:27:27.650869 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m17:27:27.656103 [debug] [Thread-1 (]: On model.Propharma.stg_inventory: Close
+[0m17:27:27.662372 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A04B510>]}
+[0m17:27:27.664376 [info ] [Thread-1 (]: 1 of 11 OK created sql view model public.stg_inventory ......................... [[32mCREATE VIEW[0m in 0.69s]
+[0m17:27:27.667427 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_inventory
+[0m17:27:27.668423 [debug] [Thread-1 (]: Began running node model.Propharma.stg_medicines
+[0m17:27:27.670510 [info ] [Thread-1 (]: 2 of 11 START sql view model public.stg_medicines .............................. [RUN]
+[0m17:27:27.672752 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_inventory, now model.Propharma.stg_medicines)
+[0m17:27:27.675199 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_medicines
+[0m17:27:27.686926 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_medicines"
+[0m17:27:27.692487 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_medicines
+[0m17:27:27.706047 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.stg_medicines"
+[0m17:27:27.712476 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_medicines"
+[0m17:27:27.713476 [debug] [Thread-1 (]: On model.Propharma.stg_medicines: BEGIN
+[0m17:27:27.715574 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:28.007518 [debug] [Thread-1 (]: SQL status: BEGIN in 0.291 seconds
+[0m17:27:28.008521 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_medicines"
+[0m17:27:28.009519 [debug] [Thread-1 (]: On model.Propharma.stg_medicines: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_medicines"} */
+
+  create view "propharma"."public"."stg_medicines__dbt_tmp"
+    
+    
+  as (
+    
+
+with raw_medicines as (
+    select * from "propharma"."public"."medicines"
+)
+
+select
+    medicine_id,
+    name,
+    category,
+    price::numeric(10,2) as price,
+    expiry_date::date as expiry_date
+from raw_medicines
+  );
+[0m17:27:28.022984 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.011 seconds
+[0m17:27:28.032618 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_medicines"
+[0m17:27:28.034090 [debug] [Thread-1 (]: On model.Propharma.stg_medicines: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_medicines"} */
+alter table "propharma"."public"."stg_medicines" rename to "stg_medicines__dbt_backup"
+[0m17:27:28.037656 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:28.046271 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_medicines"
+[0m17:27:28.048461 [debug] [Thread-1 (]: On model.Propharma.stg_medicines: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_medicines"} */
+alter table "propharma"."public"."stg_medicines__dbt_tmp" rename to "stg_medicines"
+[0m17:27:28.052255 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:28.056250 [debug] [Thread-1 (]: On model.Propharma.stg_medicines: COMMIT
+[0m17:27:28.058625 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_medicines"
+[0m17:27:28.059944 [debug] [Thread-1 (]: On model.Propharma.stg_medicines: COMMIT
+[0m17:27:28.063538 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m17:27:28.072477 [debug] [Thread-1 (]: Applying DROP to: "propharma"."public"."stg_medicines__dbt_backup"
+[0m17:27:28.075475 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_medicines"
+[0m17:27:28.077582 [debug] [Thread-1 (]: On model.Propharma.stg_medicines: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_medicines"} */
+drop view if exists "propharma"."public"."stg_medicines__dbt_backup" cascade
+[0m17:27:28.082446 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m17:27:28.086456 [debug] [Thread-1 (]: On model.Propharma.stg_medicines: Close
+[0m17:27:28.089729 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026368D9DE90>]}
+[0m17:27:28.092283 [info ] [Thread-1 (]: 2 of 11 OK created sql view model public.stg_medicines ......................... [[32mCREATE VIEW[0m in 0.42s]
+[0m17:27:28.095378 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_medicines
+[0m17:27:28.097713 [debug] [Thread-1 (]: Began running node model.Propharma.stg_patients
+[0m17:27:28.099749 [info ] [Thread-1 (]: 3 of 11 START sql view model public.stg_patients ............................... [RUN]
+[0m17:27:28.103295 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_medicines, now model.Propharma.stg_patients)
+[0m17:27:28.105686 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_patients
+[0m17:27:28.118343 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_patients"
+[0m17:27:28.124422 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_patients
+[0m17:27:28.137271 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.stg_patients"
+[0m17:27:28.142719 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_patients"
+[0m17:27:28.144711 [debug] [Thread-1 (]: On model.Propharma.stg_patients: BEGIN
+[0m17:27:28.146706 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:28.462333 [debug] [Thread-1 (]: SQL status: BEGIN in 0.315 seconds
+[0m17:27:28.463337 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_patients"
+[0m17:27:28.465335 [debug] [Thread-1 (]: On model.Propharma.stg_patients: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_patients"} */
+
+  create view "propharma"."public"."stg_patients__dbt_tmp"
+    
+    
+  as (
+    
+
+with raw_patients as (
+    select * from "propharma"."public"."patients"
+)
+
+select
+    patient_id,
+    name,
+    dob::date as dob,
+    gender
+from raw_patients
+  );
+[0m17:27:28.479544 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.013 seconds
+[0m17:27:28.491659 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_patients"
+[0m17:27:28.493682 [debug] [Thread-1 (]: On model.Propharma.stg_patients: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_patients"} */
+alter table "propharma"."public"."stg_patients" rename to "stg_patients__dbt_backup"
+[0m17:27:28.496679 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:28.507653 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_patients"
+[0m17:27:28.508651 [debug] [Thread-1 (]: On model.Propharma.stg_patients: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_patients"} */
+alter table "propharma"."public"."stg_patients__dbt_tmp" rename to "stg_patients"
+[0m17:27:28.511643 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:28.517143 [debug] [Thread-1 (]: On model.Propharma.stg_patients: COMMIT
+[0m17:27:28.518197 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_patients"
+[0m17:27:28.519544 [debug] [Thread-1 (]: On model.Propharma.stg_patients: COMMIT
+[0m17:27:28.522579 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:27:28.531266 [debug] [Thread-1 (]: Applying DROP to: "propharma"."public"."stg_patients__dbt_backup"
+[0m17:27:28.533262 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_patients"
+[0m17:27:28.534259 [debug] [Thread-1 (]: On model.Propharma.stg_patients: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_patients"} */
+drop view if exists "propharma"."public"."stg_patients__dbt_backup" cascade
+[0m17:27:28.539554 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m17:27:28.543952 [debug] [Thread-1 (]: On model.Propharma.stg_patients: Close
+[0m17:27:28.546041 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026368D50B50>]}
+[0m17:27:28.548882 [info ] [Thread-1 (]: 3 of 11 OK created sql view model public.stg_patients .......................... [[32mCREATE VIEW[0m in 0.44s]
+[0m17:27:28.552409 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_patients
+[0m17:27:28.554282 [debug] [Thread-1 (]: Began running node model.Propharma.stg_prescriptions
+[0m17:27:28.556763 [info ] [Thread-1 (]: 4 of 11 START sql view model public.stg_prescriptions .......................... [RUN]
+[0m17:27:28.559050 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_patients, now model.Propharma.stg_prescriptions)
+[0m17:27:28.561455 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_prescriptions
+[0m17:27:28.571277 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_prescriptions"
+[0m17:27:28.577072 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_prescriptions
+[0m17:27:28.594344 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.stg_prescriptions"
+[0m17:27:28.599785 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_prescriptions"
+[0m17:27:28.601294 [debug] [Thread-1 (]: On model.Propharma.stg_prescriptions: BEGIN
+[0m17:27:28.604111 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:28.875256 [debug] [Thread-1 (]: SQL status: BEGIN in 0.272 seconds
+[0m17:27:28.876721 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_prescriptions"
+[0m17:27:28.878820 [debug] [Thread-1 (]: On model.Propharma.stg_prescriptions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_prescriptions"} */
+
+  create view "propharma"."public"."stg_prescriptions__dbt_tmp"
+    
+    
+  as (
+    
+
+with raw_prescriptions as (
+    select * from "propharma"."public"."prescriptions"
+)
+
+select
+    prescription_id,
+    patient_id,
+    medicine_id,
+    prescribed_date,
+    quantity::int as quantity
+from raw_prescriptions
+  );
+[0m17:27:28.888216 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.009 seconds
+[0m17:27:28.896780 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_prescriptions"
+[0m17:27:28.897872 [debug] [Thread-1 (]: On model.Propharma.stg_prescriptions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_prescriptions"} */
+alter table "propharma"."public"."stg_prescriptions" rename to "stg_prescriptions__dbt_backup"
+[0m17:27:28.900522 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:28.907914 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_prescriptions"
+[0m17:27:28.908917 [debug] [Thread-1 (]: On model.Propharma.stg_prescriptions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_prescriptions"} */
+alter table "propharma"."public"."stg_prescriptions__dbt_tmp" rename to "stg_prescriptions"
+[0m17:27:28.910102 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:28.914628 [debug] [Thread-1 (]: On model.Propharma.stg_prescriptions: COMMIT
+[0m17:27:28.915625 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_prescriptions"
+[0m17:27:28.917620 [debug] [Thread-1 (]: On model.Propharma.stg_prescriptions: COMMIT
+[0m17:27:28.919871 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:27:28.926378 [debug] [Thread-1 (]: Applying DROP to: "propharma"."public"."stg_prescriptions__dbt_backup"
+[0m17:27:28.928709 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_prescriptions"
+[0m17:27:28.929711 [debug] [Thread-1 (]: On model.Propharma.stg_prescriptions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_prescriptions"} */
+drop view if exists "propharma"."public"."stg_prescriptions__dbt_backup" cascade
+[0m17:27:28.934420 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m17:27:28.938775 [debug] [Thread-1 (]: On model.Propharma.stg_prescriptions: Close
+[0m17:27:28.941283 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A68B8D0>]}
+[0m17:27:28.943776 [info ] [Thread-1 (]: 4 of 11 OK created sql view model public.stg_prescriptions ..................... [[32mCREATE VIEW[0m in 0.38s]
+[0m17:27:28.947157 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_prescriptions
+[0m17:27:28.949448 [debug] [Thread-1 (]: Began running node model.Propharma.stg_sales
+[0m17:27:28.950949 [info ] [Thread-1 (]: 5 of 11 START sql view model public.stg_sales .................................. [RUN]
+[0m17:27:28.953309 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_prescriptions, now model.Propharma.stg_sales)
+[0m17:27:28.954813 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_sales
+[0m17:27:28.965915 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_sales"
+[0m17:27:28.970188 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_sales
+[0m17:27:28.984666 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.stg_sales"
+[0m17:27:28.988968 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_sales"
+[0m17:27:28.989970 [debug] [Thread-1 (]: On model.Propharma.stg_sales: BEGIN
+[0m17:27:28.992525 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:29.400729 [debug] [Thread-1 (]: SQL status: BEGIN in 0.409 seconds
+[0m17:27:29.402764 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_sales"
+[0m17:27:29.403799 [debug] [Thread-1 (]: On model.Propharma.stg_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_sales"} */
+
+  create view "propharma"."public"."stg_sales__dbt_tmp"
+    
+    
+  as (
+    
+
+
+with raw_sales as (
+    select * from "propharma"."public"."sales"
+)
+select
+    sale_id,
+    prescription_id,
+    medicine_id,
+    sale_date::date as sale_date,
+    quantity_sold::int,
+    amount::numeric(10,2)
+from raw_sales
+  );
+[0m17:27:29.414213 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.009 seconds
+[0m17:27:29.421368 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_sales"
+[0m17:27:29.422387 [debug] [Thread-1 (]: On model.Propharma.stg_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_sales"} */
+alter table "propharma"."public"."stg_sales" rename to "stg_sales__dbt_backup"
+[0m17:27:29.424470 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:29.431717 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_sales"
+[0m17:27:29.432725 [debug] [Thread-1 (]: On model.Propharma.stg_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_sales"} */
+alter table "propharma"."public"."stg_sales__dbt_tmp" rename to "stg_sales"
+[0m17:27:29.434084 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:29.438138 [debug] [Thread-1 (]: On model.Propharma.stg_sales: COMMIT
+[0m17:27:29.439175 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_sales"
+[0m17:27:29.440179 [debug] [Thread-1 (]: On model.Propharma.stg_sales: COMMIT
+[0m17:27:29.443735 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m17:27:29.449204 [debug] [Thread-1 (]: Applying DROP to: "propharma"."public"."stg_sales__dbt_backup"
+[0m17:27:29.450712 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_sales"
+[0m17:27:29.452221 [debug] [Thread-1 (]: On model.Propharma.stg_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_sales"} */
+drop view if exists "propharma"."public"."stg_sales__dbt_backup" cascade
+[0m17:27:29.456593 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.002 seconds
+[0m17:27:29.460002 [debug] [Thread-1 (]: On model.Propharma.stg_sales: Close
+[0m17:27:29.461545 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A3C7090>]}
+[0m17:27:29.463887 [info ] [Thread-1 (]: 5 of 11 OK created sql view model public.stg_sales ............................. [[32mCREATE VIEW[0m in 0.51s]
+[0m17:27:29.466878 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_sales
+[0m17:27:29.468947 [debug] [Thread-1 (]: Began running node model.Propharma.stg_suppliers
+[0m17:27:29.469998 [info ] [Thread-1 (]: 6 of 11 START sql view model public.stg_suppliers .............................. [RUN]
+[0m17:27:29.472532 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_sales, now model.Propharma.stg_suppliers)
+[0m17:27:29.474533 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_suppliers
+[0m17:27:29.484955 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_suppliers"
+[0m17:27:29.490592 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_suppliers
+[0m17:27:29.501312 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.stg_suppliers"
+[0m17:27:29.507954 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_suppliers"
+[0m17:27:29.509270 [debug] [Thread-1 (]: On model.Propharma.stg_suppliers: BEGIN
+[0m17:27:29.511297 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:29.781412 [debug] [Thread-1 (]: SQL status: BEGIN in 0.270 seconds
+[0m17:27:29.782592 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_suppliers"
+[0m17:27:29.783773 [debug] [Thread-1 (]: On model.Propharma.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_suppliers"} */
+
+  create view "propharma"."public"."stg_suppliers__dbt_tmp"
+    
+    
+  as (
+    
+
+
+with raw_suppliers as (
+    select * from "propharma"."public"."suppliers"
+)
+
+select
+    supplier_id,
+    supplier_name,
+    medicine_id,
+    last_supplied_date::date as last_supplied_date
+from raw_suppliers
+  );
+[0m17:27:29.793222 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.008 seconds
+[0m17:27:29.800555 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_suppliers"
+[0m17:27:29.801553 [debug] [Thread-1 (]: On model.Propharma.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_suppliers"} */
+alter table "propharma"."public"."stg_suppliers" rename to "stg_suppliers__dbt_backup"
+[0m17:27:29.802944 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:29.809917 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_suppliers"
+[0m17:27:29.811437 [debug] [Thread-1 (]: On model.Propharma.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_suppliers"} */
+alter table "propharma"."public"."stg_suppliers__dbt_tmp" rename to "stg_suppliers"
+[0m17:27:29.813594 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m17:27:29.816893 [debug] [Thread-1 (]: On model.Propharma.stg_suppliers: COMMIT
+[0m17:27:29.819116 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_suppliers"
+[0m17:27:29.820138 [debug] [Thread-1 (]: On model.Propharma.stg_suppliers: COMMIT
+[0m17:27:29.823252 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:27:29.828959 [debug] [Thread-1 (]: Applying DROP to: "propharma"."public"."stg_suppliers__dbt_backup"
+[0m17:27:29.829997 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.stg_suppliers"
+[0m17:27:29.832619 [debug] [Thread-1 (]: On model.Propharma.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.stg_suppliers"} */
+drop view if exists "propharma"."public"."stg_suppliers__dbt_backup" cascade
+[0m17:27:29.835995 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.002 seconds
+[0m17:27:29.839051 [debug] [Thread-1 (]: On model.Propharma.stg_suppliers: Close
+[0m17:27:29.841588 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A05EAD0>]}
+[0m17:27:29.842630 [info ] [Thread-1 (]: 6 of 11 OK created sql view model public.stg_suppliers ......................... [[32mCREATE VIEW[0m in 0.37s]
+[0m17:27:29.846384 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_suppliers
+[0m17:27:29.848575 [debug] [Thread-1 (]: Began running node model.Propharma.mart_expired_drugs
+[0m17:27:29.849572 [info ] [Thread-1 (]: 7 of 11 START sql incremental model public.mart_expired_drugs .................. [RUN]
+[0m17:27:29.852440 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_suppliers, now model.Propharma.mart_expired_drugs)
+[0m17:27:29.854804 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_expired_drugs
+[0m17:27:29.869253 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_expired_drugs"
+[0m17:27:29.873497 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_expired_drugs
+[0m17:27:29.968837 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_expired_drugs"
+[0m17:27:29.969856 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_expired_drugs"} */
+
+    
+  
+    
+
+  create temporary table "mart_expired_drugs__dbt_tmp172729934764"
+  
+  
+    as
+  
+  (
+    
+
+select
+    m.medicine_id,
+    m.name,
+    m.category,
+    m.price,
+    m.expiry_date,
+    i.stock_qty,
+    i.last_updated,
+    case 
+        when i.stock_qty < 20 then true
+        else false
+    end as low_stock_flag,
+    
+        true as expired
+    
+from "propharma"."public"."stg_inventory" i
+join "propharma"."public"."stg_medicines" m on i.medicine_id = m.medicine_id
+  );
+  
+  
+[0m17:27:29.972377 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:30.226295 [debug] [Thread-1 (]: SQL status: SELECT 10 in 0.254 seconds
+[0m17:27:30.253829 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_expired_drugs"
+[0m17:27:30.254369 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: BEGIN
+[0m17:27:30.257026 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m17:27:30.258810 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_expired_drugs"
+[0m17:27:30.260113 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_expired_drugs"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'mart_expired_drugs__dbt_tmp172729934764'
+        
+      order by ordinal_position
+
+  
+[0m17:27:30.286359 [debug] [Thread-1 (]: SQL status: SELECT 9 in 0.024 seconds
+[0m17:27:30.296843 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_expired_drugs"
+[0m17:27:30.297841 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_expired_drugs"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_expired_drugs'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:30.305594 [debug] [Thread-1 (]: SQL status: SELECT 9 in 0.006 seconds
+[0m17:27:30.320036 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_expired_drugs"
+[0m17:27:30.321595 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_expired_drugs"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_expired_drugs'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:30.329989 [debug] [Thread-1 (]: SQL status: SELECT 9 in 0.006 seconds
+[0m17:27:30.360724 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.mart_expired_drugs"
+[0m17:27:30.364717 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_expired_drugs"
+[0m17:27:30.366711 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_expired_drugs"} */
+
+      
+        
+        
+        delete from "propharma"."public"."mart_expired_drugs" as DBT_INTERNAL_DEST
+        where (medicine_id) in (
+            select distinct medicine_id
+            from "mart_expired_drugs__dbt_tmp172729934764" as DBT_INTERNAL_SOURCE
+        );
+
+    
+
+    insert into "propharma"."public"."mart_expired_drugs" ("medicine_id", "name", "category", "price", "expiry_date", "stock_qty", "last_updated", "low_stock_flag", "expired")
+    (
+        select "medicine_id", "name", "category", "price", "expiry_date", "stock_qty", "last_updated", "low_stock_flag", "expired"
+        from "mart_expired_drugs__dbt_tmp172729934764"
+    )
+  
+[0m17:27:30.370701 [debug] [Thread-1 (]: SQL status: INSERT 0 10 in 0.003 seconds
+[0m17:27:30.373448 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: COMMIT
+[0m17:27:30.375471 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_expired_drugs"
+[0m17:27:30.376467 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: COMMIT
+[0m17:27:30.378749 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:27:30.381376 [debug] [Thread-1 (]: On model.Propharma.mart_expired_drugs: Close
+[0m17:27:30.383344 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A3B3BD0>]}
+[0m17:27:30.385427 [info ] [Thread-1 (]: 7 of 11 OK created sql incremental model public.mart_expired_drugs ............. [[32mINSERT 0 10[0m in 0.53s]
+[0m17:27:30.389701 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_expired_drugs
+[0m17:27:30.391786 [debug] [Thread-1 (]: Began running node model.Propharma.mart_inventory_status
+[0m17:27:30.392782 [info ] [Thread-1 (]: 8 of 11 START sql incremental model public.mart_inventory_status ............... [RUN]
+[0m17:27:30.395455 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.mart_expired_drugs, now model.Propharma.mart_inventory_status)
+[0m17:27:30.398016 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_inventory_status
+[0m17:27:30.407344 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_inventory_status"
+[0m17:27:30.411514 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_inventory_status
+[0m17:27:30.424748 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_inventory_status"
+[0m17:27:30.425913 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_inventory_status"} */
+
+    
+  
+    
+
+  create temporary table "mart_inventory_status__dbt_tmp172730419283"
+  
+  
+    as
+  
+  (
+    
+
+select
+    m.medicine_id,
+    m.name,
+    m.category,
+    m.price,
+    m.expiry_date,
+    i.stock_qty,
+    i.last_updated,
+    case 
+        when i.stock_qty < 20 then true
+        else false
+    end as low_stock_flag
+from "propharma"."public"."stg_inventory" i
+join "propharma"."public"."stg_medicines" m on i.medicine_id = m.medicine_id
+  );
+  
+  
+[0m17:27:30.427964 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:30.751441 [debug] [Thread-1 (]: SQL status: SELECT 10 in 0.323 seconds
+[0m17:27:30.757448 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_inventory_status"
+[0m17:27:30.758446 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: BEGIN
+[0m17:27:30.761438 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m17:27:30.761943 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_inventory_status"
+[0m17:27:30.763942 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_inventory_status"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'mart_inventory_status__dbt_tmp172730419283'
+        
+      order by ordinal_position
+
+  
+[0m17:27:30.788425 [debug] [Thread-1 (]: SQL status: SELECT 8 in 0.023 seconds
+[0m17:27:30.794916 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_inventory_status"
+[0m17:27:30.797424 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_inventory_status"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_inventory_status'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:30.804915 [debug] [Thread-1 (]: SQL status: SELECT 8 in 0.006 seconds
+[0m17:27:30.812410 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_inventory_status"
+[0m17:27:30.813408 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_inventory_status"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_inventory_status'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:30.820427 [debug] [Thread-1 (]: SQL status: SELECT 8 in 0.006 seconds
+[0m17:27:30.825481 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.mart_inventory_status"
+[0m17:27:30.829690 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_inventory_status"
+[0m17:27:30.831668 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_inventory_status"} */
+
+      
+        
+        
+        delete from "propharma"."public"."mart_inventory_status" as DBT_INTERNAL_DEST
+        where (medicine_id) in (
+            select distinct medicine_id
+            from "mart_inventory_status__dbt_tmp172730419283" as DBT_INTERNAL_SOURCE
+        );
+
+    
+
+    insert into "propharma"."public"."mart_inventory_status" ("medicine_id", "name", "category", "price", "expiry_date", "stock_qty", "last_updated", "low_stock_flag")
+    (
+        select "medicine_id", "name", "category", "price", "expiry_date", "stock_qty", "last_updated", "low_stock_flag"
+        from "mart_inventory_status__dbt_tmp172730419283"
+    )
+  
+[0m17:27:30.835848 [debug] [Thread-1 (]: SQL status: INSERT 0 10 in 0.003 seconds
+[0m17:27:30.839004 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: COMMIT
+[0m17:27:30.840037 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_inventory_status"
+[0m17:27:30.842032 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: COMMIT
+[0m17:27:30.844747 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m17:27:30.847042 [debug] [Thread-1 (]: On model.Propharma.mart_inventory_status: Close
+[0m17:27:30.849035 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026368B75C10>]}
+[0m17:27:30.851544 [info ] [Thread-1 (]: 8 of 11 OK created sql incremental model public.mart_inventory_status .......... [[32mINSERT 0 10[0m in 0.45s]
+[0m17:27:30.855646 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_inventory_status
+[0m17:27:30.857646 [debug] [Thread-1 (]: Began running node model.Propharma.mart_sales_summary
+[0m17:27:30.860474 [info ] [Thread-1 (]: 9 of 11 START sql incremental model public.mart_sales_summary .................. [RUN]
+[0m17:27:30.862528 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.mart_inventory_status, now model.Propharma.mart_sales_summary)
+[0m17:27:30.864809 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_sales_summary
+[0m17:27:30.875520 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_sales_summary"
+[0m17:27:30.881270 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_sales_summary
+[0m17:27:30.896376 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_sales_summary"
+[0m17:27:30.898467 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_sales_summary"} */
+
+    
+  
+    
+
+  create temporary table "mart_sales_summary__dbt_tmp172730891614"
+  
+  
+    as
+  
+  (
+    
+
+select
+    date_trunc('day', sale_date) as sales_day,
+    date_trunc('month', sale_date) as sales_month,
+    count(*) as total_sales_count,
+    sum(quantity_sold)::int as total_quantity,
+    sum(amount)::numeric(10,2) as total_revenue
+from "propharma"."public"."stg_sales"
+group by sales_day, sales_month
+order by sales_day
+  );
+  
+  
+[0m17:27:30.900617 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:31.206378 [debug] [Thread-1 (]: SQL status: SELECT 10 in 0.306 seconds
+[0m17:27:31.215683 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_sales_summary"
+[0m17:27:31.216687 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: BEGIN
+[0m17:27:31.220019 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m17:27:31.221534 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_sales_summary"
+[0m17:27:31.223550 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_sales_summary"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'mart_sales_summary__dbt_tmp172730891614'
+        
+      order by ordinal_position
+
+  
+[0m17:27:31.274849 [debug] [Thread-1 (]: SQL status: SELECT 5 in 0.050 seconds
+[0m17:27:31.306343 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_sales_summary"
+[0m17:27:31.335972 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_sales_summary"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_sales_summary'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:31.354987 [debug] [Thread-1 (]: SQL status: SELECT 5 in 0.010 seconds
+[0m17:27:31.366971 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_sales_summary"
+[0m17:27:31.369391 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_sales_summary"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_sales_summary'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:31.380673 [debug] [Thread-1 (]: SQL status: SELECT 5 in 0.009 seconds
+[0m17:27:31.401508 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.mart_sales_summary"
+[0m17:27:31.407184 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_sales_summary"
+[0m17:27:31.409179 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_sales_summary"} */
+
+      insert into "propharma"."public"."mart_sales_summary" ("sales_day", "sales_month", "total_sales_count", "total_quantity", "total_revenue")
+    (
+        select "sales_day", "sales_month", "total_sales_count", "total_quantity", "total_revenue"
+        from "mart_sales_summary__dbt_tmp172730891614"
+    )
+
+
+  
+[0m17:27:31.413655 [debug] [Thread-1 (]: SQL status: INSERT 0 10 in 0.002 seconds
+[0m17:27:31.419150 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: COMMIT
+[0m17:27:31.422678 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_sales_summary"
+[0m17:27:31.424081 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: COMMIT
+[0m17:27:31.428638 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:27:31.432541 [debug] [Thread-1 (]: On model.Propharma.mart_sales_summary: Close
+[0m17:27:31.434931 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636855D8D0>]}
+[0m17:27:31.437690 [info ] [Thread-1 (]: 9 of 11 OK created sql incremental model public.mart_sales_summary ............. [[32mINSERT 0 10[0m in 0.57s]
+[0m17:27:31.441639 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_sales_summary
+[0m17:27:31.443644 [debug] [Thread-1 (]: Began running node model.Propharma.mart_top_customers
+[0m17:27:31.444838 [info ] [Thread-1 (]: 10 of 11 START sql incremental model public.mart_top_customers ................. [RUN]
+[0m17:27:31.456772 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.mart_sales_summary, now model.Propharma.mart_top_customers)
+[0m17:27:31.458774 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_top_customers
+[0m17:27:31.472418 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_top_customers"
+[0m17:27:31.477958 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_top_customers
+[0m17:27:31.493746 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_top_customers"
+[0m17:27:31.495745 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_top_customers"} */
+
+    
+  
+    
+
+  create temporary table "mart_top_customers__dbt_tmp172731487174"
+  
+  
+    as
+  
+  (
+    
+
+select
+    p.patient_id,
+    p.name,
+    count(*) as purchase_count,
+    sum(s.amount)::numeric(10,2) as total_value
+from "propharma"."public"."stg_sales" s
+join "propharma"."public"."stg_prescriptions" pr on s.prescription_id = pr.prescription_id
+join "propharma"."public"."stg_patients" p on pr.patient_id = p.patient_id
+group by p.patient_id, p.name
+  );
+  
+  
+[0m17:27:31.498737 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:31.876422 [debug] [Thread-1 (]: SQL status: SELECT 10 in 0.378 seconds
+[0m17:27:31.885066 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_top_customers"
+[0m17:27:31.887676 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: BEGIN
+[0m17:27:31.890165 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m17:27:31.892201 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_top_customers"
+[0m17:27:31.894200 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_top_customers"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'mart_top_customers__dbt_tmp172731487174'
+        
+      order by ordinal_position
+
+  
+[0m17:27:31.922231 [debug] [Thread-1 (]: SQL status: SELECT 4 in 0.026 seconds
+[0m17:27:31.928934 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_top_customers"
+[0m17:27:31.929929 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_top_customers"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_top_customers'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:31.939404 [debug] [Thread-1 (]: SQL status: SELECT 4 in 0.007 seconds
+[0m17:27:31.945779 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_top_customers"
+[0m17:27:31.947798 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_top_customers"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_top_customers'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:31.956247 [debug] [Thread-1 (]: SQL status: SELECT 4 in 0.006 seconds
+[0m17:27:31.960242 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.mart_top_customers"
+[0m17:27:31.964076 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_top_customers"
+[0m17:27:31.966416 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_top_customers"} */
+
+      
+        
+        
+        delete from "propharma"."public"."mart_top_customers" as DBT_INTERNAL_DEST
+        where (patient_id) in (
+            select distinct patient_id
+            from "mart_top_customers__dbt_tmp172731487174" as DBT_INTERNAL_SOURCE
+        );
+
+    
+
+    insert into "propharma"."public"."mart_top_customers" ("patient_id", "name", "purchase_count", "total_value")
+    (
+        select "patient_id", "name", "purchase_count", "total_value"
+        from "mart_top_customers__dbt_tmp172731487174"
+    )
+  
+[0m17:27:31.970405 [debug] [Thread-1 (]: SQL status: INSERT 0 10 in 0.002 seconds
+[0m17:27:31.974144 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: COMMIT
+[0m17:27:31.975504 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_top_customers"
+[0m17:27:31.976577 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: COMMIT
+[0m17:27:31.978628 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:27:31.982963 [debug] [Thread-1 (]: On model.Propharma.mart_top_customers: Close
+[0m17:27:31.983960 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A7B9D10>]}
+[0m17:27:31.986421 [info ] [Thread-1 (]: 10 of 11 OK created sql incremental model public.mart_top_customers ............ [[32mINSERT 0 10[0m in 0.53s]
+[0m17:27:31.990929 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_top_customers
+[0m17:27:31.992520 [debug] [Thread-1 (]: Began running node model.Propharma.mart_invoice
+[0m17:27:31.994994 [info ] [Thread-1 (]: 11 of 11 START sql incremental model public.mart_invoice ....................... [RUN]
+[0m17:27:31.998316 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.mart_top_customers, now model.Propharma.mart_invoice)
+[0m17:27:32.001428 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_invoice
+[0m17:27:32.012768 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_invoice"
+[0m17:27:32.018271 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_invoice
+[0m17:27:32.037174 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_invoice"
+[0m17:27:32.038193 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_invoice"} */
+
+    
+  
+    
+
+  create temporary table "mart_invoice__dbt_tmp172732026305"
+  
+  
+    as
+  
+  (
+    
+
+select pat.patient_id,
+	pat.name AS "Patients Name",
+	EXTRACT(YEAR FROM AGE(CURRENT_DATE, pat.dob)) AS "Patients Age",
+	pre.prescribed_date as "Prescribed Date",
+	pre.quantity as "Prescribed Quantity",
+	med.name as "Medicine Name",
+	sup.supplier_name as "Supplier Name",
+	pre.quantity * med.price::numeric(10,2) as "Total Price",
+	med.expiry_date AS "Medicine Expiry Date"
+	from "propharma"."public"."stg_patients" pat
+	join "propharma"."public"."stg_prescriptions" pre on pat.patient_id = pre.patient_id
+	join "propharma"."public"."stg_medicines" med on pre.medicine_id = med.medicine_id
+	join "propharma"."public"."stg_suppliers" sup on med.medicine_id = sup.medicine_id
+  );
+  
+  
+[0m17:27:32.039360 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:27:32.325240 [debug] [Thread-1 (]: SQL status: SELECT 10 in 0.285 seconds
+[0m17:27:32.331700 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_invoice"
+[0m17:27:32.333775 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: BEGIN
+[0m17:27:32.336654 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m17:27:32.337681 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_invoice"
+[0m17:27:32.338679 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_invoice"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'mart_invoice__dbt_tmp172732026305'
+        
+      order by ordinal_position
+
+  
+[0m17:27:32.365388 [debug] [Thread-1 (]: SQL status: SELECT 9 in 0.025 seconds
+[0m17:27:32.372377 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_invoice"
+[0m17:27:32.373374 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_invoice"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_invoice'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:32.380387 [debug] [Thread-1 (]: SQL status: SELECT 8 in 0.006 seconds
+[0m17:27:32.387831 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_invoice"
+[0m17:27:32.389007 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_invoice"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "propharma".INFORMATION_SCHEMA.columns
+      where table_name = 'mart_invoice'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m17:27:32.396307 [debug] [Thread-1 (]: SQL status: SELECT 8 in 0.006 seconds
+[0m17:27:32.400409 [debug] [Thread-1 (]: Writing runtime sql for node "model.Propharma.mart_invoice"
+[0m17:27:32.404683 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_invoice"
+[0m17:27:32.405685 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "node_id": "model.Propharma.mart_invoice"} */
+
+      
+        
+        
+        delete from "propharma"."public"."mart_invoice" as DBT_INTERNAL_DEST
+        where (patient_id) in (
+            select distinct patient_id
+            from "mart_invoice__dbt_tmp172732026305" as DBT_INTERNAL_SOURCE
+        );
+
+    
+
+    insert into "propharma"."public"."mart_invoice" ("patient_id", "Patients Name", "Patients Age", "Prescribed Date", "Prescribed Quantity", "Medicine Name", "Total Price", "Medicine Expiry Date")
+    (
+        select "patient_id", "Patients Name", "Patients Age", "Prescribed Date", "Prescribed Quantity", "Medicine Name", "Total Price", "Medicine Expiry Date"
+        from "mart_invoice__dbt_tmp172732026305"
+    )
+  
+[0m17:27:32.410234 [debug] [Thread-1 (]: SQL status: INSERT 0 10 in 0.003 seconds
+[0m17:27:32.413297 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: COMMIT
+[0m17:27:32.415291 [debug] [Thread-1 (]: Using postgres connection "model.Propharma.mart_invoice"
+[0m17:27:32.416293 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: COMMIT
+[0m17:27:32.419320 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m17:27:32.421288 [debug] [Thread-1 (]: On model.Propharma.mart_invoice: Close
+[0m17:27:32.422851 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fed78384-ceb4-4e58-aaf0-9066410be775', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002636A813650>]}
+[0m17:27:32.425273 [info ] [Thread-1 (]: 11 of 11 OK created sql incremental model public.mart_invoice .................. [[32mINSERT 0 10[0m in 0.42s]
+[0m17:27:32.428992 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_invoice
+[0m17:27:32.432404 [debug] [MainThread]: Using postgres connection "master"
+[0m17:27:32.433972 [debug] [MainThread]: On master: BEGIN
+[0m17:27:32.436098 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:27:32.702938 [debug] [MainThread]: SQL status: BEGIN in 0.266 seconds
+[0m17:27:32.704112 [debug] [MainThread]: On master: COMMIT
+[0m17:27:32.704650 [debug] [MainThread]: Using postgres connection "master"
+[0m17:27:32.706309 [debug] [MainThread]: On master: COMMIT
+[0m17:27:32.707448 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m17:27:32.709493 [debug] [MainThread]: On master: Close
+[0m17:27:32.711189 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:27:32.711698 [debug] [MainThread]: Connection 'list_propharma' was properly closed.
+[0m17:27:32.713717 [debug] [MainThread]: Connection 'list_propharma_public' was properly closed.
+[0m17:27:32.714714 [debug] [MainThread]: Connection 'model.Propharma.mart_invoice' was properly closed.
+[0m17:27:32.716714 [info ] [MainThread]: 
+[0m17:27:32.719031 [info ] [MainThread]: Finished running 5 incremental models, 6 view models in 0 hours 0 minutes and 7.89 seconds (7.89s).
+[0m17:27:32.725753 [debug] [MainThread]: Command end result
+[0m17:27:32.793892 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anisin06\Downloads\Propharma\target\manifest.json
+[0m17:27:32.800315 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anisin06\Downloads\Propharma\target\semantic_manifest.json
+[0m17:27:32.818191 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anisin06\Downloads\Propharma\target\run_results.json
+[0m17:27:32.819191 [info ] [MainThread]: 
+[0m17:27:32.821189 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:27:32.823183 [info ] [MainThread]: 
+[0m17:27:32.825178 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11
+[0m17:27:32.829389 [debug] [MainThread]: Command `dbt run` succeeded at 17:27:32.827992 after 12.02 seconds
+[0m17:27:32.831436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263621DFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263621DF3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263621DF390>]}
+[0m17:27:32.832569 [debug] [MainThread]: Flushing usage events
+[0m17:27:34.185719 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:27:53.404671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D05BFA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D06166D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D06168D0>]}
+
+
+============================== 17:27:53.412729 | 102b9047-0a8a-40ff-b300-b4d804f66f0a ==============================
+[0m17:27:53.412729 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:27:53.414730 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\anisin06\\Downloads\\Propharma', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\anisin06\\Downloads\\Propharma\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:27:53.853018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '102b9047-0a8a-40ff-b300-b4d804f66f0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D07B4E50>]}
+[0m17:27:53.968159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '102b9047-0a8a-40ff-b300-b4d804f66f0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1CD207510>]}
+[0m17:27:53.971158 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:27:54.849653 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m17:27:55.424920 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:27:55.427730 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:27:55.652057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '102b9047-0a8a-40ff-b300-b4d804f66f0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D0756490>]}
+[0m17:27:55.749812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '102b9047-0a8a-40ff-b300-b4d804f66f0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D1C47F90>]}
+[0m17:27:55.752356 [info ] [MainThread]: Found 1 seed, 1 snapshot, 8 data tests, 11 models, 6 sources, 435 macros
+[0m17:27:55.754829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '102b9047-0a8a-40ff-b300-b4d804f66f0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D1AB78D0>]}
+[0m17:27:55.761244 [info ] [MainThread]: 
+[0m17:27:55.764814 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:27:55.767323 [info ] [MainThread]: 
+[0m17:27:55.769860 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:27:55.784951 [debug] [ThreadPool]: Acquiring new postgres connection 'list_propharma_snapshots'
+[0m17:27:56.384335 [debug] [ThreadPool]: Using postgres connection "list_propharma_snapshots"
+[0m17:27:56.385386 [debug] [ThreadPool]: On list_propharma_snapshots: BEGIN
+[0m17:27:56.386582 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:27:56.709655 [debug] [ThreadPool]: SQL status: BEGIN in 0.322 seconds
+[0m17:27:56.711165 [debug] [ThreadPool]: Using postgres connection "list_propharma_snapshots"
+[0m17:27:56.713567 [debug] [ThreadPool]: On list_propharma_snapshots: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "connection_name": "list_propharma_snapshots"} */
+select
+      'propharma' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'snapshots'
+    union all
+    select
+      'propharma' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'snapshots'
+    union all
+    select
+      'propharma' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'snapshots'
+  
+[0m17:27:56.728379 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.013 seconds
+[0m17:27:56.730698 [debug] [ThreadPool]: On list_propharma_snapshots: ROLLBACK
+[0m17:27:56.733183 [debug] [ThreadPool]: On list_propharma_snapshots: Close
+[0m17:27:56.734192 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_propharma_snapshots, now list_propharma_public)
+[0m17:27:56.742399 [debug] [ThreadPool]: Using postgres connection "list_propharma_public"
+[0m17:27:56.744958 [debug] [ThreadPool]: On list_propharma_public: BEGIN
+[0m17:27:56.746006 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:27:57.035480 [debug] [ThreadPool]: SQL status: BEGIN in 0.289 seconds
+[0m17:27:57.037473 [debug] [ThreadPool]: Using postgres connection "list_propharma_public"
+[0m17:27:57.038713 [debug] [ThreadPool]: On list_propharma_public: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "connection_name": "list_propharma_public"} */
+select
+      'propharma' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'propharma' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'propharma' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m17:27:57.049462 [debug] [ThreadPool]: SQL status: SELECT 17 in 0.010 seconds
+[0m17:27:57.052992 [debug] [ThreadPool]: On list_propharma_public: ROLLBACK
+[0m17:27:57.055350 [debug] [ThreadPool]: On list_propharma_public: Close
+[0m17:27:57.070548 [debug] [MainThread]: Using postgres connection "master"
+[0m17:27:57.072050 [debug] [MainThread]: On master: BEGIN
+[0m17:27:57.073051 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:27:57.310456 [debug] [MainThread]: SQL status: BEGIN in 0.237 seconds
+[0m17:27:57.311958 [debug] [MainThread]: Using postgres connection "master"
+[0m17:27:57.313957 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m17:27:57.362668 [debug] [MainThread]: SQL status: SELECT 6 in 0.046 seconds
+[0m17:27:57.368157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '102b9047-0a8a-40ff-b300-b4d804f66f0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D0617C50>]}
+[0m17:27:57.369665 [debug] [MainThread]: On master: ROLLBACK
+[0m17:27:57.371270 [debug] [MainThread]: On master: Close
+[0m17:27:57.383406 [debug] [Thread-1 (]: Began running node model.Propharma.stg_inventory
+[0m17:27:57.384421 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.Propharma.stg_inventory'
+[0m17:27:57.385424 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_inventory
+[0m17:27:57.402851 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_inventory"
+[0m17:27:57.407401 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_inventory
+[0m17:27:57.409421 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_inventory
+[0m17:27:57.410417 [debug] [Thread-1 (]: Began running node model.Propharma.stg_medicines
+[0m17:27:57.412650 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_inventory, now model.Propharma.stg_medicines)
+[0m17:27:57.413850 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_medicines
+[0m17:27:57.419841 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_medicines"
+[0m17:27:57.425185 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_medicines
+[0m17:27:57.427235 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_medicines
+[0m17:27:57.428313 [debug] [Thread-1 (]: Began running node model.Propharma.stg_patients
+[0m17:27:57.429326 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_medicines, now model.Propharma.stg_patients)
+[0m17:27:57.431622 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_patients
+[0m17:27:57.438296 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_patients"
+[0m17:27:57.441323 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_patients
+[0m17:27:57.443444 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_patients
+[0m17:27:57.444656 [debug] [Thread-1 (]: Began running node model.Propharma.stg_prescriptions
+[0m17:27:57.446935 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_patients, now model.Propharma.stg_prescriptions)
+[0m17:27:57.447932 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_prescriptions
+[0m17:27:57.455312 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_prescriptions"
+[0m17:27:57.458705 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_prescriptions
+[0m17:27:57.461216 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_prescriptions
+[0m17:27:57.462232 [debug] [Thread-1 (]: Began running node model.Propharma.stg_sales
+[0m17:27:57.463414 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_prescriptions, now model.Propharma.stg_sales)
+[0m17:27:57.464851 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_sales
+[0m17:27:57.473927 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_sales"
+[0m17:27:57.477918 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_sales
+[0m17:27:57.481421 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_sales
+[0m17:27:57.482423 [debug] [Thread-1 (]: Began running node model.Propharma.stg_suppliers
+[0m17:27:57.484417 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_sales, now model.Propharma.stg_suppliers)
+[0m17:27:57.485414 [debug] [Thread-1 (]: Began compiling node model.Propharma.stg_suppliers
+[0m17:27:57.493148 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.stg_suppliers"
+[0m17:27:57.498141 [debug] [Thread-1 (]: Began executing node model.Propharma.stg_suppliers
+[0m17:27:57.500135 [debug] [Thread-1 (]: Finished running node model.Propharma.stg_suppliers
+[0m17:27:57.502679 [debug] [Thread-1 (]: Began running node seed.Propharma.sample_data
+[0m17:27:57.504797 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.stg_suppliers, now seed.Propharma.sample_data)
+[0m17:27:57.507839 [debug] [Thread-1 (]: Began compiling node seed.Propharma.sample_data
+[0m17:27:57.514346 [debug] [Thread-1 (]: Began executing node seed.Propharma.sample_data
+[0m17:27:57.517338 [debug] [Thread-1 (]: Finished running node seed.Propharma.sample_data
+[0m17:27:57.519332 [debug] [Thread-1 (]: Began running node test.Propharma.source_empty_string_raw_tables_med_name.8592fbfff4
+[0m17:27:57.521833 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.Propharma.sample_data, now test.Propharma.source_empty_string_raw_tables_med_name.8592fbfff4)
+[0m17:27:57.523866 [debug] [Thread-1 (]: Began compiling node test.Propharma.source_empty_string_raw_tables_med_name.8592fbfff4
+[0m17:27:57.543086 [debug] [Thread-1 (]: Writing injected SQL for node "test.Propharma.source_empty_string_raw_tables_med_name.8592fbfff4"
+[0m17:27:57.546132 [debug] [Thread-1 (]: Began executing node test.Propharma.source_empty_string_raw_tables_med_name.8592fbfff4
+[0m17:27:57.548615 [debug] [Thread-1 (]: Finished running node test.Propharma.source_empty_string_raw_tables_med_name.8592fbfff4
+[0m17:27:57.549626 [debug] [Thread-1 (]: Began running node test.Propharma.source_not_null_raw_tables_inv_inventory_id.ea7fecdc51
+[0m17:27:57.551642 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Propharma.source_empty_string_raw_tables_med_name.8592fbfff4, now test.Propharma.source_not_null_raw_tables_inv_inventory_id.ea7fecdc51)
+[0m17:27:57.553151 [debug] [Thread-1 (]: Began compiling node test.Propharma.source_not_null_raw_tables_inv_inventory_id.ea7fecdc51
+[0m17:27:57.572497 [debug] [Thread-1 (]: Writing injected SQL for node "test.Propharma.source_not_null_raw_tables_inv_inventory_id.ea7fecdc51"
+[0m17:27:57.576400 [debug] [Thread-1 (]: Began executing node test.Propharma.source_not_null_raw_tables_inv_inventory_id.ea7fecdc51
+[0m17:27:57.578395 [debug] [Thread-1 (]: Finished running node test.Propharma.source_not_null_raw_tables_inv_inventory_id.ea7fecdc51
+[0m17:27:57.579643 [debug] [Thread-1 (]: Began running node test.Propharma.source_not_null_raw_tables_med_medicine_id.7de6f18efa
+[0m17:27:57.580636 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Propharma.source_not_null_raw_tables_inv_inventory_id.ea7fecdc51, now test.Propharma.source_not_null_raw_tables_med_medicine_id.7de6f18efa)
+[0m17:27:57.581647 [debug] [Thread-1 (]: Began compiling node test.Propharma.source_not_null_raw_tables_med_medicine_id.7de6f18efa
+[0m17:27:57.590046 [debug] [Thread-1 (]: Writing injected SQL for node "test.Propharma.source_not_null_raw_tables_med_medicine_id.7de6f18efa"
+[0m17:27:57.593613 [debug] [Thread-1 (]: Began executing node test.Propharma.source_not_null_raw_tables_med_medicine_id.7de6f18efa
+[0m17:27:57.596942 [debug] [Thread-1 (]: Finished running node test.Propharma.source_not_null_raw_tables_med_medicine_id.7de6f18efa
+[0m17:27:57.597939 [debug] [Thread-1 (]: Began running node test.Propharma.source_not_null_raw_tables_med_name.01052fa279
+[0m17:27:57.598936 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Propharma.source_not_null_raw_tables_med_medicine_id.7de6f18efa, now test.Propharma.source_not_null_raw_tables_med_name.01052fa279)
+[0m17:27:57.600306 [debug] [Thread-1 (]: Began compiling node test.Propharma.source_not_null_raw_tables_med_name.01052fa279
+[0m17:27:57.608596 [debug] [Thread-1 (]: Writing injected SQL for node "test.Propharma.source_not_null_raw_tables_med_name.01052fa279"
+[0m17:27:57.612292 [debug] [Thread-1 (]: Began executing node test.Propharma.source_not_null_raw_tables_med_name.01052fa279
+[0m17:27:57.614422 [debug] [Thread-1 (]: Finished running node test.Propharma.source_not_null_raw_tables_med_name.01052fa279
+[0m17:27:57.616451 [debug] [Thread-1 (]: Began running node test.Propharma.source_not_null_raw_tables_pat_patient_id.da59dcb00d
+[0m17:27:57.617456 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Propharma.source_not_null_raw_tables_med_name.01052fa279, now test.Propharma.source_not_null_raw_tables_pat_patient_id.da59dcb00d)
+[0m17:27:57.618701 [debug] [Thread-1 (]: Began compiling node test.Propharma.source_not_null_raw_tables_pat_patient_id.da59dcb00d
+[0m17:27:57.626687 [debug] [Thread-1 (]: Writing injected SQL for node "test.Propharma.source_not_null_raw_tables_pat_patient_id.da59dcb00d"
+[0m17:27:57.631863 [debug] [Thread-1 (]: Began executing node test.Propharma.source_not_null_raw_tables_pat_patient_id.da59dcb00d
+[0m17:27:57.634620 [debug] [Thread-1 (]: Finished running node test.Propharma.source_not_null_raw_tables_pat_patient_id.da59dcb00d
+[0m17:27:57.636622 [debug] [Thread-1 (]: Began running node test.Propharma.source_not_null_raw_tables_pre_prescription_id.52a4550e1d
+[0m17:27:57.638073 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Propharma.source_not_null_raw_tables_pat_patient_id.da59dcb00d, now test.Propharma.source_not_null_raw_tables_pre_prescription_id.52a4550e1d)
+[0m17:27:57.639070 [debug] [Thread-1 (]: Began compiling node test.Propharma.source_not_null_raw_tables_pre_prescription_id.52a4550e1d
+[0m17:27:57.647192 [debug] [Thread-1 (]: Writing injected SQL for node "test.Propharma.source_not_null_raw_tables_pre_prescription_id.52a4550e1d"
+[0m17:27:57.651182 [debug] [Thread-1 (]: Began executing node test.Propharma.source_not_null_raw_tables_pre_prescription_id.52a4550e1d
+[0m17:27:57.653687 [debug] [Thread-1 (]: Finished running node test.Propharma.source_not_null_raw_tables_pre_prescription_id.52a4550e1d
+[0m17:27:57.654688 [debug] [Thread-1 (]: Began running node test.Propharma.source_not_null_raw_tables_sal_sale_id.999d8ef35e
+[0m17:27:57.655686 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Propharma.source_not_null_raw_tables_pre_prescription_id.52a4550e1d, now test.Propharma.source_not_null_raw_tables_sal_sale_id.999d8ef35e)
+[0m17:27:57.657180 [debug] [Thread-1 (]: Began compiling node test.Propharma.source_not_null_raw_tables_sal_sale_id.999d8ef35e
+[0m17:27:57.665205 [debug] [Thread-1 (]: Writing injected SQL for node "test.Propharma.source_not_null_raw_tables_sal_sale_id.999d8ef35e"
+[0m17:27:57.668198 [debug] [Thread-1 (]: Began executing node test.Propharma.source_not_null_raw_tables_sal_sale_id.999d8ef35e
+[0m17:27:57.671252 [debug] [Thread-1 (]: Finished running node test.Propharma.source_not_null_raw_tables_sal_sale_id.999d8ef35e
+[0m17:27:57.672274 [debug] [Thread-1 (]: Began running node test.Propharma.source_not_null_raw_tables_sup_supplier_id.3c47983bfd
+[0m17:27:57.673271 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Propharma.source_not_null_raw_tables_sal_sale_id.999d8ef35e, now test.Propharma.source_not_null_raw_tables_sup_supplier_id.3c47983bfd)
+[0m17:27:57.675267 [debug] [Thread-1 (]: Began compiling node test.Propharma.source_not_null_raw_tables_sup_supplier_id.3c47983bfd
+[0m17:27:57.682761 [debug] [Thread-1 (]: Writing injected SQL for node "test.Propharma.source_not_null_raw_tables_sup_supplier_id.3c47983bfd"
+[0m17:27:57.687017 [debug] [Thread-1 (]: Began executing node test.Propharma.source_not_null_raw_tables_sup_supplier_id.3c47983bfd
+[0m17:27:57.689044 [debug] [Thread-1 (]: Finished running node test.Propharma.source_not_null_raw_tables_sup_supplier_id.3c47983bfd
+[0m17:27:57.691337 [debug] [Thread-1 (]: Began running node model.Propharma.mart_expired_drugs
+[0m17:27:57.692673 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Propharma.source_not_null_raw_tables_sup_supplier_id.3c47983bfd, now model.Propharma.mart_expired_drugs)
+[0m17:27:57.694686 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_expired_drugs
+[0m17:27:57.705701 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_expired_drugs"
+[0m17:27:57.709660 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_expired_drugs
+[0m17:27:57.712164 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_expired_drugs
+[0m17:27:57.713165 [debug] [Thread-1 (]: Began running node model.Propharma.mart_inventory_status
+[0m17:27:57.715239 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.mart_expired_drugs, now model.Propharma.mart_inventory_status)
+[0m17:27:57.716240 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_inventory_status
+[0m17:27:57.723420 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_inventory_status"
+[0m17:27:57.726486 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_inventory_status
+[0m17:27:57.728624 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_inventory_status
+[0m17:27:57.729631 [debug] [Thread-1 (]: Began running node snapshot.Propharma.snapshot_prescriptions
+[0m17:27:57.731462 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.mart_inventory_status, now snapshot.Propharma.snapshot_prescriptions)
+[0m17:27:57.732497 [debug] [Thread-1 (]: Began compiling node snapshot.Propharma.snapshot_prescriptions
+[0m17:27:57.739839 [debug] [Thread-1 (]: Began executing node snapshot.Propharma.snapshot_prescriptions
+[0m17:27:57.741348 [debug] [Thread-1 (]: Finished running node snapshot.Propharma.snapshot_prescriptions
+[0m17:27:57.743672 [debug] [Thread-1 (]: Began running node model.Propharma.mart_sales_summary
+[0m17:27:57.744723 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly snapshot.Propharma.snapshot_prescriptions, now model.Propharma.mart_sales_summary)
+[0m17:27:57.745752 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_sales_summary
+[0m17:27:57.752651 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_sales_summary"
+[0m17:27:57.756078 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_sales_summary
+[0m17:27:57.758374 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_sales_summary
+[0m17:27:57.759378 [debug] [Thread-1 (]: Began running node model.Propharma.mart_top_customers
+[0m17:27:57.760375 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.mart_sales_summary, now model.Propharma.mart_top_customers)
+[0m17:27:57.761375 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_top_customers
+[0m17:27:57.768446 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_top_customers"
+[0m17:27:57.772519 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_top_customers
+[0m17:27:57.774816 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_top_customers
+[0m17:27:57.776863 [debug] [Thread-1 (]: Began running node model.Propharma.mart_invoice
+[0m17:27:57.777883 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Propharma.mart_top_customers, now model.Propharma.mart_invoice)
+[0m17:27:57.779227 [debug] [Thread-1 (]: Began compiling node model.Propharma.mart_invoice
+[0m17:27:57.789258 [debug] [Thread-1 (]: Writing injected SQL for node "model.Propharma.mart_invoice"
+[0m17:27:57.793493 [debug] [Thread-1 (]: Began executing node model.Propharma.mart_invoice
+[0m17:27:57.795626 [debug] [Thread-1 (]: Finished running node model.Propharma.mart_invoice
+[0m17:27:57.796918 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:27:57.798827 [debug] [MainThread]: Connection 'list_propharma_public' was properly closed.
+[0m17:27:57.799829 [debug] [MainThread]: Connection 'model.Propharma.mart_invoice' was properly closed.
+[0m17:27:57.807476 [debug] [MainThread]: Command end result
+[0m17:27:58.029946 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anisin06\Downloads\Propharma\target\manifest.json
+[0m17:27:58.041472 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anisin06\Downloads\Propharma\target\semantic_manifest.json
+[0m17:27:58.116842 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\anisin06\Downloads\Propharma\target\run_results.json
+[0m17:27:58.126356 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m17:27:58.128351 [info ] [MainThread]: Building catalog
+[0m17:27:58.155397 [debug] [ThreadPool]: Acquiring new postgres connection 'propharma.information_schema'
+[0m17:27:58.172247 [debug] [ThreadPool]: Using postgres connection "propharma.information_schema"
+[0m17:27:58.174243 [debug] [ThreadPool]: On propharma.information_schema: BEGIN
+[0m17:27:58.175268 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:27:58.424386 [debug] [ThreadPool]: SQL status: BEGIN in 0.249 seconds
+[0m17:27:58.425648 [debug] [ThreadPool]: Using postgres connection "propharma.information_schema"
+[0m17:27:58.426677 [debug] [ThreadPool]: On propharma.information_schema: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Propharma", "target_name": "dev", "connection_name": "propharma.information_schema"} */
+
+    
+    
+
+    select
+        'propharma' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_inventory')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('sales')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_medicines')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('mart_sales_summary')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('mart_invoice')) or (upper(sch.nspname) = upper('snapshots') and
+           upper(tbl.relname) = upper('snapshot_prescriptions')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('mart_inventory_status')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_suppliers')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('mart_top_customers')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('patients')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('sample_data')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('mart_expired_drugs')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('medicines')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('suppliers')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_prescriptions')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('prescriptions')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_patients')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('inventory')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_sales')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m17:27:58.443543 [debug] [ThreadPool]: SQL status: SELECT 99 in 0.015 seconds
+[0m17:27:58.458374 [debug] [ThreadPool]: On propharma.information_schema: ROLLBACK
+[0m17:27:58.460522 [debug] [ThreadPool]: On propharma.information_schema: Close
+[0m17:27:58.499486 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\anisin06\Downloads\Propharma\target\catalog.json
+[0m17:27:58.570140 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\anisin06\Downloads\Propharma\target\manifest.json
+[0m17:27:58.577706 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\anisin06\Downloads\Propharma\target\semantic_manifest.json
+[0m17:27:58.579044 [info ] [MainThread]: Catalog written to C:\Users\anisin06\Downloads\Propharma\target\catalog.json
+[0m17:27:58.582333 [debug] [MainThread]: Command `dbt docs generate` succeeded at 17:27:58.582333 after 5.45 seconds
+[0m17:27:58.583335 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m17:27:58.584336 [debug] [MainThread]: Connection 'propharma.information_schema' was properly closed.
+[0m17:27:58.586331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1CD31C450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1D19EFA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1C9C4F290>]}
+[0m17:27:58.587329 [debug] [MainThread]: Flushing usage events
+[0m17:27:59.694788 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:28:08.684675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002201682E190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220168608D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220164929D0>]}
+
+
+============================== 17:28:08.692689 | 10b26a3a-06d5-4eba-b8e8-5faa3791a016 ==============================
+[0m17:28:08.692689 [info ] [MainThread]: Running with dbt=1.9.4
+[0m17:28:08.694691 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\anisin06\\Downloads\\Propharma\\logs', 'profiles_dir': 'C:\\Users\\anisin06\\Downloads\\Propharma', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs serve', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:28:09.294143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '10b26a3a-06d5-4eba-b8e8-5faa3791a016', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220169EDB10>]}
+[0m17:28:09.410521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '10b26a3a-06d5-4eba-b8e8-5faa3791a016', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022013485F10>]}
